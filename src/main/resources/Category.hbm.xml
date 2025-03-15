@@ -1,0 +1,28 @@
+<hibernate-mapping>
+    <class name="org.example.pojo.Category" table="category">
+
+
+        <id
+                name="id"
+                column="id"
+                type="int"
+        >
+            <generator class="increment" />
+        </id>
+
+        <property
+                name="name"
+                column="name"
+                type="string"
+        />
+
+        <property
+                name="description"
+                column="description"
+                type="string"
+        />
+
+        <!-- other porperties... -->
+
+    </class>
+</hibernate-mapping>
